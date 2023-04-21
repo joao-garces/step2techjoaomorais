@@ -49,9 +49,14 @@ body {
     margin: 80px 100px;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1 {
    font-size: 36px;
-   color: white;
+   color: whitesmoke;
    font-weight: bold;
    margin-bottom: 70px;
 }
@@ -59,11 +64,11 @@ h1 {
 div {
     font-size: 18px;
     line-height: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 p {
-    color: #5FCEC7;
+    color: whitesmoke;
     font-size: 26px;
 }
 
@@ -71,7 +76,6 @@ ul {
     list-style: none;
     padding: 0;
     text-align: right;
-    margin-top: 60px;
 }
 
 li {
@@ -79,8 +83,21 @@ li {
     margin-right: 10px;
 }
 
+a {
+    color:#5FCEC7;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover {
+    color:#5FCEC7;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
 .logotype {
-    color: white;
+    color: whitesmoke;
     font-size: 30px;
     font-weight: bold;
     background-color: #5FCEC7;
@@ -90,34 +107,81 @@ li {
     margin-bottom: 180px;
 }
 
+.logotype-dot{
+    color:#5FCEC7;
+    font-weight: bold;
+    font-size: 80px;
+}
+
 .box {
     background-color: #5FCEC7;
     border-radius: 50px;
     padding: 0 16px;
-    line-height: 70px;
+    line-height: 60px;
+    max-height: 20px;  /*perceber porque não consigo reduzir a height*/
 }
 
 .container {
-    color: white;
+    color: whitesmoke;
     font-size: 18px;
     margin: 40px 0;
+    padding-right: 40%;
 }
 
 .text-main-color {
-    font-size: 46px;
+    font-size: 50px;
     color:#5FCEC7;
 }
 
 .skills {
     font-size: 18px;
     margin-top: 20px;
-    color: white;
-    border: 1px solid #5FCEC7;
+    color: whitesmoke;
+    border: 2px solid #5FCEC7;
+    opacity: 0.8;
     border-radius: 50px;
     padding: 2px 16px;
 }
 
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .CTA-text {
     color: #5FCEC7;
-    margin-top: 40px;
+    font-weight: bold;
 }
+
+.glow-button {
+    padding: 6px 20px;
+    margin-right: 500px;
+    max-height: 25px;
+    background-color:#5FCEC7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 0 10px #5FCEC7;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  /*.glow-button::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }*/
+
+  .glow-button:hover {
+    opacity: 0.3;
+    color:white;
+  }
