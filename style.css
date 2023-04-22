@@ -42,19 +42,23 @@ abbr,acronym { border:0;
 /* End of CSS reset*/
 
 body {
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Pathway Extreme', sans-serif;
+    margin: 20px 100px 50px 100px;
     background-image: url(Images/binary_code_blue.jpg);
     background-color: #074f57;
     background-size: cover;
     background-position: center;
-    margin: 20px 80px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 130px;
+    min-width: 100%;
+    position: relative;
+    bottom: 0px;
 }
 
 h1 {
@@ -62,12 +66,6 @@ h1 {
    color: whitesmoke;
    font-weight: bold;
    margin-bottom: 70px;
-}
-
-div {
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 15px;
 }
 
 p {
@@ -79,6 +77,9 @@ ul {
     list-style: none;
     padding: 0;
     text-align: right;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
 li {
@@ -89,8 +90,9 @@ li {
 a {
     color:#5FCEC7;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 a:hover {
@@ -126,7 +128,7 @@ a:hover {
     background-color: #5FCEC7;
     border-radius: 50px;
     padding: 2px 16px;
-    height: auto;  /*perceber porque não consigo reduzir a height*/
+    /*height: auto;  perceber porque não consigo reduzir a height*/
 }
 
 .container {
@@ -145,6 +147,10 @@ a:hover {
     text-decoration: underline 2px;
     text-decoration-color:#5FCEC7;
     text-underline-offset: 3px;
+}
+
+.skils-div {
+    line-height: 50px;
 }
 
 .skills {
@@ -171,7 +177,7 @@ a:hover {
 
 .glow-button {
     padding: 10px 30px;
-    margin: auto;
+    margin-left: 80px;
     max-height: 25px;
     white-space: nowrap;
     background-color:#5FCEC7;
@@ -183,7 +189,7 @@ a:hover {
     transition: box-shadow 0.3s ease-in-out;
   }
 
-  /*.glow-button::before {
+/*.glow-button::before {
     content: "";
     position: absolute;
     top: -5px;
@@ -197,7 +203,29 @@ a:hover {
     transition: opacity 0.3s ease-in-out;
   }*/
 
-  .glow-button:hover {
+.glow-button:hover {
     opacity: 0.3;
     color:white;
   }
+
+/* ---------Media Queries - breakpoints mais comuns--------------
+
+tlm: 640px
+tablet: 768px
+laptop: 1024px
+desktop: 1280px
+xl desktop:1580px */
+
+@media screen and (max-width: 640px) {
+    body {
+        background-image: unset;
+        background-image: url(Images/binary_code_blue_vertical.jpg);
+        background-color: #074f57;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+}
