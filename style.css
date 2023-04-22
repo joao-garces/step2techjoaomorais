@@ -133,7 +133,7 @@ a:hover {
 .container {
     color: whitesmoke;
     font-size: 18px;
-    margin: 40px 0;
+    margin-bottom: 20px;
     padding-right: 30%;
 }
 
@@ -143,7 +143,7 @@ a:hover {
 }
 
 .underline {
-    text-decoration: underline 2px;
+    text-decoration: underline 3px;
     text-decoration-color:#5FCEC7;
     text-underline-offset: 3px;
 }
