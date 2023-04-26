@@ -209,6 +209,7 @@ xl desktop:1580px */
 
     h1 {
         font-size: 36px;
+        text-align: center;
         color: whitesmoke;
         font-weight: bold;
      }
@@ -231,11 +232,26 @@ xl desktop:1580px */
         color:#5FCEC7;
     }
 
+    .skils-div{
+        text-align: center;
+    }
+
     .bottom-div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
     }
+
+    .CTA-text {
+        color: #5FCEC7;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .glow-button {
+        margin-bottom: 40px;
+      }
 }
