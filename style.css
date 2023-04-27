@@ -204,6 +204,11 @@ a:hover {
     border-radius: 8px;
     font-size: 16px;
 }
+
+.button:hover {
+    opacity: 0.7;
+    color:white;
+  }
 /* ---------Media Queries - breakpoints mais comuns--------------
 
 tlm: 640px
