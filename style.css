@@ -44,7 +44,7 @@ abbr,acronym { border:0;
 body {
     font-family: 'Pathway Extreme', sans-serif;
     color: whitesmoke;
-    margin: 8px 40px 40px 40px;
+    margin: 8px 40px 0 40px;
     background-image: url(Images/binary_code_green.jpg);
     background-color: #074f57;
     background-size: cover;
